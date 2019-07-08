@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示班级及其学生</title>
+</head>
+<body>
+<div>hello</div>
+<ul>
+    {% for aa in gras%}
+    <li><a href="{{aa.pk}}">{{aa.gname}}</a>
+        <h3>学生列</h3>
+        <ul>
+            {% for bb in sras%}}
+                {% if bb.sgrade == aa.pk%}
+                    <li><a href="#">{{bb.sname}}</a></li>
+                {% else %}
+                    <h6>mnb</h6>
+                {% endif %}}
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

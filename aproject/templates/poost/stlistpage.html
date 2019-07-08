@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页显示</title>
+</head>
+<body>
+     AAAAA {{AA}}
+    <ul>
+        {% for stu in stpage %}
+         <li style="color: red">
+             <a>{{stu.sname}},{{stu.sgrade}}</a>
+         </li>
+     {% endfor %}
+    </ul>
+
+        {% for index in stpage.paginator.page_range %}
+
+            <a href="/StudentPage/{{index}}" style="color:blue">--{{index}}--</a>
+
+        {% endfor %}
+
+</body>
+</html>

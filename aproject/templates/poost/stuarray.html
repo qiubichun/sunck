@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul class="">
+        <h2 style="color: aqua">第-{{goods.number}}-页</h2>
+        {% for good in goods %}
+        <li>
+
+            <h4>{{good.sname}}--{{good.sgrade}}</h4>
+        </li>
+        {% endfor %}
+    </ul>
+
+        {% for index in goods.paginator.page_range %}
+            {% if index == goods.number %}
+                <p style="background-color: darkred"><img src="/static/Myaap3/IMGS/diy_15.jpg"/>
+                    {{index}}</p>
+            {% else %}
+                <a href="/StuPage/{{index}}"><img src="/static/Myaap3/IMGS/diy_15.jpg"/>{{index}}</a>
+            {% endif %}
+        {% endfor %}
+
+</body>
+</html>

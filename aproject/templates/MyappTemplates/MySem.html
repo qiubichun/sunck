@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息表</title>
+</head>
+<body>
+<h1>学生信息表</h1>
+<ul>
+    <li><a href="#">班级名{{gras.gname}}</a></li>
+    {% for bb in sras %}
+        <li><a href="#">{{bb.sname}}</a> </li>
+    {% endfor %}
+    <li>{{t}}</li>
+</ul>
+</body>
+</html>
