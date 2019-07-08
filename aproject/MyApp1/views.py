@@ -136,3 +136,12 @@ def TEST2TEST2(request,current_page):
     stupa = Paginator(stulist,5)
     papage = stupa.page(current_page)
     return render(request,"poost/stuarray.html",{"goods":papage})
+
+
+
+
+def TEST2TEST2TEST3TEST3(request,current_page):
+    stulist = Students.graobj.all()
+    stupa = Paginator(stulist,5)
+    papage = stupa.page(current_page)
+    return render(request,"poost/stuarray.html",{"goods":papage})
