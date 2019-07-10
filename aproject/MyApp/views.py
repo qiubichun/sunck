@@ -66,5 +66,8 @@ def Tlist (request):
     td = Teachers.objects.all()
     return render(request,'MyappTemplates/MySem.html',{"sras":td})
 
+def Tlisthghghjgggggg (request):
+    td = Teachers.objects.all()
+    return render(request,'MyappTemplates/MySem.html',{"sras":td})
 
 
