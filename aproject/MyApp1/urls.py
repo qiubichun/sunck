@@ -14,4 +14,5 @@ urlpatterns = [re_path('^molo/(\d+)$',views.grd),
                re_path('^fsch/$',views.Fsearch),
                re_path('^jgs/$',views.JoinGradeStudents),
                re_path('^StudentPage/(\d+)/$',views.StPa),
-               re_path('^StuPage/(\d+)/$',views.StuPa),]
+               re_path('^StuPage/(\d+)/$',views.StuPa),
+               re_path('^SSSSSTS/(\d+)/$',views.StuPa),]
