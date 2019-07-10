@@ -70,4 +70,7 @@ def Tlisthghghjgggggg (request):
     td = Teachers.objects.all()
     return render(request,'MyappTemplates/MySem.html',{"sras":td})
 
+def gggggg (request):
+    td = Teachers.objects.all()
+    return render(request,'MyappTemplates/MySem.html',{"sras":td})
 
